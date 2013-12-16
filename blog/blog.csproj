@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{80F2DE61-1BF1-4F79-BFA6-F88E7FA7BA43}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>blog</RootNamespace>
+    <AssemblyName>blog</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bootstrap\css\bootstrap-cerulean.css" />
+    <Content Include="bootstrap\css\bootstrap-responsive.css" />
+    <Content Include="bootstrap\css\bootstrap-responsive.min.css" />
+    <Content Include="bootstrap\css\bootstrap-theme.css" />
+    <Content Include="bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="bootstrap\css\bootstrap.css" />
+    <Content Include="bootstrap\css\bootstrap.min.css" />
+    <Content Include="bootstrap\css\datetimepicker.css" />
+    <Content Include="bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="bootstrap\img\glyphicons-halflings-white.png" />
+    <Content Include="bootstrap\img\glyphicons-halflings.png" />
+    <Content Include="bootstrap\js\bootstrap-datetimepicker.js" />
+    <Content Include="bootstrap\js\bootstrap-datetimepicker.zh-CN.js" />
+    <Content Include="bootstrap\js\bootstrap.js" />
+    <Content Include="bootstrap\js\bootstrap.min.js" />
+    <Content Include="content.html" />
+    <Content Include="content2.html" />
+    <Content Include="images\20131202203659.gif" />
+    <Content Include="images\20131202204227.jpg" />
+    <Content Include="images\20131202204703.jpg" />
+    <Content Include="images\aiJlV3s0C9s.png" />
+    <Content Include="images\biaoqing.png" />
+    <Content Include="images\big.cur" />
+    <Content Include="images\classic-map.png" />
+    <Content Include="images\closeImage.png" />
+    <Content Include="images\closeImage2.png" />
+    <Content Include="images\closeImage3.png" />
+    <Content Include="images\enditor\weixin-chenbo1-by-ifanr.jpg" />
+    <Content Include="images\enditor\weixin-luli-by-ifanr.jpg" />
+    <Content Include="images\enditor\weixin-pattern-recognition-team1.jpg" />
+    <Content Include="images\face\ai_f51.png" />
+    <Content Include="images\face\ai_f52.png" />
+    <Content Include="images\face\ai_f53.png" />
+    <Content Include="images\face\ai_f54.png" />
+    <Content Include="images\face\ai_f55.png" />
+    <Content Include="images\face\ai_f56.png" />
+    <Content Include="images\face\ai_f57.png" />
+    <Content Include="images\face\ai_f58.png" />
+    <Content Include="images\face\ai_f59.png" />
+    <Content Include="images\face\ai_f60.png" />
+    <Content Include="images\face\ai_f61.png" />
+    <Content Include="images\face\ai_f62.png" />
+    <Content Include="images\face\ai_f63.png" />
+    <Content Include="images\face\ai_f64.png" />
+    <Content Include="images\face\ai_f65.png" />
+    <Content Include="images\face\ai_f66.png" />
+    <Content Include="images\face\ai_f67.png" />
+    <Content Include="images\face\ai_f68.png" />
+    <Content Include="images\face\ai_f69.png" />
+    <Content Include="images\face\ai_f70.png" />
+    <Content Include="images\face\ai_f71.png" />
+    <Content Include="images\face\ai_f72.png" />
+    <Content Include="images\face\ai_f73.png" />
+    <Content Include="images\face\ai_f74.png" />
+    <Content Include="images\face\ai_f75.png" />
+    <Content Include="images\face\ai_f76.png" />
+    <Content Include="images\face\ai_f77.png" />
+    <Content Include="images\face\ai_f78.png" />
+    <Content Include="images\face\ai_f79.png" />
+    <Content Include="images\face\ai_f80.png" />
+    <Content Include="images\face\ai_f81.png" />
+    <Content Include="images\face\ai_f82.png" />
+    <Content Include="images\face\i_f11.png" />
+    <Content Include="images\face\i_f12.png" />
+    <Content Include="images\face\i_f13.png" />
+    <Content Include="images\face\i_f14.png" />
+    <Content Include="images\face\i_f15.png" />
+    <Content Include="images\face\i_f16.png" />
+    <Content Include="images\face\i_f17.png" />
+    <Content Include="images\face\i_f18.png" />
+    <Content Include="images\face\i_f19.png" />
+    <Content Include="images\face\i_f20.png" />
+    <Content Include="images\face\i_f21.png" />
+    <Content Include="images\face\i_f22.png" />
+    <Content Include="images\face\i_f23.png" />
+    <Content Include="images\face\i_f24.png" />
+    <Content Include="images\face\i_f25.png" />
+    <Content Include="images\face\i_f26.png" />
+    <Content Include="images\face\i_f27.png" />
+    <Content Include="images\face\i_f28.png" />
+    <Content Include="images\face\i_f29.png" />
+    <Content Include="images\face\i_f30.png" />
+    <Content Include="images\face\i_f31.png" />
+    <Content Include="images\face\i_f32.png" />
+    <Content Include="images\face\i_f33.png" />
+    <Content Include="images\face\i_f34.png" />
+    <Content Include="images\face\i_f35.png" />
+    <Content Include="images\face\i_f36.png" />
+    <Content Include="images\face\i_f37.png" />
+    <Content Include="images\face\i_f38.png" />
+    <Content Include="images\face\i_f39.png" />
+    <Content Include="images\face\i_f40.png" />
+    <Content Include="images\face\i_f41.png" />
+    <Content Include="images\face\i_f42.png" />
+    <Content Include="images\face\i_f43.png" />
+    <Content Include="images\face\i_f44.png" />
+    <Content Include="images\face\i_f45.png" />
+    <Content Include="images\face\i_f46.png" />
+    <Content Include="images\face\i_f47.png" />
+    <Content Include="images\face\i_f48.png" />
+    <Content Include="images\face\i_f49.png" />
+    <Content Include="images\face\i_f50.png" />
+    <Content Include="images\face\i_f51.png" />
+    <Content Include="images\face\i_f52.png" />
+    <Content Include="images\face\i_f53.png" />
+    <Content Include="images\face\i_f54.png" />
+    <Content Include="images\face\i_f55.png" />
+    <Content Include="images\face\i_f56.png" />
+    <Content Include="images\face\i_f57.png" />
+    <Content Include="images\face\i_f58.png" />
+    <Content Include="images\face\i_f59.png" />
+    <Content Include="images\face\i_f60.png" />
+    <Content Include="images\face\i_f61.png" />
+    <Content Include="images\face\i_f62.png" />
+    <Content Include="images\face\i_f63.png" />
+    <Content Include="images\face\i_f64.png" />
+    <Content Include="images\face\i_f65.png" />
+    <Content Include="images\face\i_f66.png" />
+    <Content Include="images\face\i_f67.png" />
+    <Content Include="images\face\i_f68.png" />
+    <Content Include="images\face\i_f69.png" />
+    <Content Include="images\face\i_f70.png" />
+    <Content Include="images\face\i_f82.png" />
+    <Content Include="images\face\i_f71.png" />
+    <Content Include="images\face\i_f72.png" />
+    <Content Include="images\face\i_f73.png" />
+    <Content Include="images\face\i_f74.png" />
+    <Content Include="images\face\i_f75.png" />
+    <Content Include="images\face\i_f76.png" />
+    <Content Include="images\face\i_f77.png" />
+    <Content Include="images\face\i_f78.png" />
+    <Content Include="images\face\i_f79.png" />
+    <Content Include="images\face\i_f80.png" />
+    <Content Include="images\face\i_f81.png" />
+    <Content Include="images\GsNJNwuI-UM.gif" />
+    <Content Include="images\small.cur" />
+    <Content Include="images\tishi.png" />
+    <Content Include="index.html" />
+    <Content Include="postContent.html" />
+    <Content Include="postContent2.html" />
+    <Content Include="register.html" />
+    <Content Include="richText\bootstrap-wysiwyg.js" />
+    <Content Include="richText\external\google-code-prettify\lang-apollo.js" />
+    <Content Include="richText\external\google-code-prettify\lang-basic.js" />
+    <Content Include="richText\external\google-code-prettify\lang-clj.js" />
+    <Content Include="richText\external\google-code-prettify\lang-css.js" />
+    <Content Include="richText\external\google-code-prettify\lang-dart.js" />
+    <Content Include="richText\external\google-code-prettify\lang-erlang.js" />
+    <Content Include="richText\external\google-code-prettify\lang-go.js" />
+    <Content Include="richText\external\google-code-prettify\lang-hs.js" />
+    <Content Include="richText\external\google-code-prettify\lang-lisp.js" />
+    <Content Include="richText\external\google-code-prettify\lang-llvm.js" />
+    <Content Include="richText\external\google-code-prettify\lang-lua.js" />
+    <Content Include="richText\external\google-code-prettify\lang-matlab.js" />
+    <Content Include="richText\external\google-code-prettify\lang-ml.js" />
+    <Content Include="richText\external\google-code-prettify\lang-mumps.js" />
+    <Content Include="richText\external\google-code-prettify\lang-n.js" />
+    <Content Include="richText\external\google-code-prettify\lang-pascal.js" />
+    <Content Include="richText\external\google-code-prettify\lang-proto.js" />
+    <Content Include="richText\external\google-code-prettify\lang-r.js" />
+    <Content Include="richText\external\google-code-prettify\lang-rd.js" />
+    <Content Include="richText\external\google-code-prettify\lang-scala.js" />
+    <Content Include="richText\external\google-code-prettify\lang-sql.js" />
+    <Content Include="richText\external\google-code-prettify\lang-tcl.js" />
+    <Content Include="richText\external\google-code-prettify\lang-tex.js" />
+    <Content Include="richText\external\google-code-prettify\lang-vb.js" />
+    <Content Include="richText\external\google-code-prettify\lang-vhdl.js" />
+    <Content Include="richText\external\google-code-prettify\lang-wiki.js" />
+    <Content Include="richText\external\google-code-prettify\lang-xq.js" />
+    <Content Include="richText\external\google-code-prettify\lang-yaml.js" />
+    <Content Include="richText\external\google-code-prettify\prettify.css" />
+    <Content Include="richText\external\google-code-prettify\prettify.js" />
+    <Content Include="richText\external\google-code-prettify\run_prettify.js" />
+    <Content Include="richText\external\jquery.hotkeys.js" />
+    <Content Include="richText\richtext.css" />
+    <Content Include="script\application.js" />
+    <Content Include="script\content.js" />
+    <Content Include="script\dvr.js" />
+    <Content Include="script\Global.js" />
+    <Content Include="script\jquery-1.10.2.js" />
+    <Content Include="script\jquery.md5.js" />
+    <Content Include="script\jquery.ui.core.js" />
+    <Content Include="script\jquery.ui.mouse.js" />
+    <Content Include="script\jquery.ui.sortable.js" />
+    <Content Include="script\jquery.ui.widget.js" />
+    <Content Include="script\jquery.upload.js" />
+    <Content Include="script\jQuery1.9.js" />
+    <Content Include="script\login.js" />
+    <Content Include="script\postContent.js" />
+    <Content Include="script\postContent2.js" />
+    <Content Include="script\register.js" />
+    <Content Include="js\webpjs-0.0.2.min.js" />
+    <Content Include="js\webpjs-0.0.2.swf" />
+    <Content Include="soft\XnConvert图片压缩软件.exe" />
+    <Content Include="soft\图片增强装置.exe" />
+    <Content Include="style\doc.css" />
+    <Content Include="TextFile2.txt" />
+    <Content Include="up\ring-multipart-3041418887208289310.gif" />
+    <Content Include="up\ring-multipart-5315107477143581241.gif" />
+    <Content Include="up\ring-multipart-564774588992048624.gif" />
+    <Content Include="Web.config" />
+    <Content Include="后台维护\dvr.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="script\jQuery2.03.js" />
+    <Content Include="images\image.webp" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:2178/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

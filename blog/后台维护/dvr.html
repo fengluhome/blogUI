@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html lang='zh-CN'>
+<head>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+    <title>DVR设备维护</title>
+
+    <link href='../bootstrap/css/bootstrap.css' rel='stylesheet' />
+    <link href='../style/doc.css' rel='stylesheet' />
+    <!--[if lt IE 9]>
+     <script src='../docs-assets/js/html5shiv.js'></script>
+     <script src='../docs-assets/js/respond.min.js'></script>
+     <script src='script/jQuery1.9.js'></script>
+   <![endif]-->
+
+    <!--[if gte IE 9]><!-->
+    <script src='../script/jQuery2.03.js'></script>
+    <!--<![endif]-->
+    <script src='../bootstrap/js/bootstrap.js'></script>
+    <script src='../script/jquery.md5.js'></script>
+    <script src="../script/dvr.js"></script>
+</head>
+<body>
+    <header class='navbar navbar-inverse navbar-fixed-top bs-docs-nav' role='banner'>
+        <div id='div-header' class='container'>
+            <div class='navbar-header'>
+                <button class='navbar-toggle' type='button' data-toggle='collapse' data-target='.bs-navbar-collapse'>
+                    <span class='sr-only'>DVR设备维护</span>
+                    <span class='icon-bar'></span>
+                    <span class='icon-bar'></span>
+                    <span class='icon-bar'></span>
+                </button>
+                <a href='#' class='navbar-brand'>DVR设备维护</a>
+                <div class='input-group ' style='width: 200px; padding-top: 10px;'>
+                    <input type='text' class='form-control' placeholder='搜索'>
+                    <span class='  input-group-addon'><span class='glyphicon glyphicon-search'></span></span>
+                </div>
+            </div>
+            <nav class='collapse navbar-collapse bs-navbar-collapse' role='navigation'>
+                <ul class='nav navbar-nav'>
+                    <li id='navHelp' class=''><a id="input-addDvr">添加</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    <div class='container'>
+        <table id="table_drv" class="table">
+            <thead>
+                <tr>
+                    <th>IP</th>
+                    <th>在线</th>
+                    <th>用户</th>
+                    <th>最大音频数</th>
+                    <th>主码流</th>
+                    <th>厂商</th>
+                    <th>端口</th>
+                    <th>连接</th>
+                    <th>子码流</th>
+                    <th>密码</th>
+                    <th>型号</th>
+                    <th>最大视频数</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+
+    </div>
+
+    <!-- Modal -->
+    <div class='modal fade' id='modalDVR' tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden='true'>
+        <div class='modal-dialog'>
+            <div class='modal-content'>
+                <div class='modal-header'>
+                    <button type='button' class='close' data-dismiss='modal' aria-hidden='true'>&times;</button>
+                    <h4 class='modal-title' id='myModalLabel'>添加设备</h4>
+                </div>
+                <div class='modal-body'>
+                    <div id="modalDVR-message" class='alert alert-warning '></div>
+                    <form class='form-horizontal' role='form'>
+
+                        <div class='form-group'>
+                            <label for='input-account' class='col-sm-3 control-label'>用户</label>
+                            <div class='col-sm-9'>
+                                <input type='text' class='form-control input-lg' id='input-account' placeholder=''>
+                            </div>
+                        </div>
+                        <div class='form-group'>
+                            <label for='input-password' class='col-sm-3 control-label'>密码</label>
+                            <div class='col-sm-9'>
+                                <input type='text' class='form-control input-lg' id='input-password' placeholder=' 密码不少于六位'>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for='input-ip' class='col-sm-3 control-label'>IP地址</label>
+                            <div class='col-sm-9'>
+                                <input type='text' class='form-control input-lg' id='input-ip' placeholder=''>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for='input-port' class='col-sm-3 control-label'>端口号</label>
+                            <div class='col-sm-9'>
+                                <input type='text' class='form-control input-lg' id='input-port' placeholder=''>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for='input-manufacturer' class='col-sm-3 control-label'>厂家</label>
+                            <div class='col-sm-9'>
+                                <input type='text' class='form-control input-lg' id='input-manufacturer' placeholder=''>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+                <div class='modal-footer'>
+                    <button type='button' class='btn btn-default' data-dismiss='modal'>关闭</button>
+                    <button id='modalDVR-add' type='button' class='btn btn-primary'>添加</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <!--  <div id="modaldvrdel" class="modal hide fade">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h3></h3>
+        </div>
+        <div class="modal-body">
+            <p></p>
+        </div>
+        <div class="modal-footer">
+            <a href="#" id="close" class="btn"></a>
+            <a href="#" id="ok" class="btn btn-primary"></a>
+        </div>
+    </div>-->
+    <div id="modal-dvr-del" class="modal fade" tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden='true'>
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close"   data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">友情提示</h4>
+                </div>
+                <div class="modal-body">
+                    <p>您确定要删除吗?</p>
+                </div>
+                <div class="modal-footer">
+                    <button id="close" type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button id="ok" type="button" class="btn btn-primary">确 定</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+  
+</body>
+</html>

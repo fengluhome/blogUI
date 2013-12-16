@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+    <title>博文</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+    <link href='bootstrap/css/bootstrap.css' rel='stylesheet' />
+    <link href='style/doc.css' rel='stylesheet' />
+    <!--[if lt IE 9]>
+     <script src='../docs-assets/js/html5shiv.js'></script>
+     <script src='../docs-assets/js/respond.min.js'></script>
+     <script src='script/jQuery1.9.js'></script>
+   <![endif]-->
+
+    <!--[if gte IE 9]><!-->
+    <script src='script/jQuery2.03.js'></script>
+    <!--<![endif]-->
+    <script src='bootstrap/js/bootstrap.js'></script>
+
+
+    <script src='script/login.js'></script>
+    <script src='script/content.js'></script>
+</head>
+<body>
+    <header class='navbar navbar-inverse navbar-fixed-top bs-docs-nav' role='banner'>
+        <div class='container'>
+            <div class='navbar-header'>
+                <button class='navbar-toggle' type='button' data-toggle='collapse' data-target='.bs-navbar-collapse'>
+                    <span class='sr-only'>blog</span>
+                    <span class='icon-bar'></span>
+                    <span class='icon-bar'></span>
+                    <span class='icon-bar'></span>
+                </button>
+                <a href='/' class='navbar-brand'>blog</a>
+            </div>
+            <div class='input-group nav navbar-nav ' style='width: 200px; padding-top: 10px;'>
+                <input type='text' class='form-control' placeholder='搜索'>
+                <span class='  input-group-addon'><span class='glyphicon glyphicon-search'></span></span>
+
+            </div>
+            <nav class='collapse navbar-collapse bs-navbar-collapse' role='navigation'>
+                <ul class='nav navbar-nav'>
+
+                    <li id='navHelp' class=''><a href='#'>联系</a></li>
+                </ul>
+                <ul class='nav navbar-nav navbar-right'>
+                    <li class='dropdown'>
+
+                        <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+
+
+                            <span class='glyphicon glyphicon-user'></span>
+
+                            一千年以后 <span class='caret'></span>
+                        </a>
+                        <ul class='dropdown-menu' role='menu'>
+                            <li><a href='#'>
+                                <span class='glyphicon glyphicon-pencil'></span>
+                                发表文章</a></li>
+                            <li><a href='#'>退出</a></li>
+
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a id='btnLogin' href='javascript:void(0)'>登录</a>
+                    </li>
+                </ul>
+
+
+
+            </nav>
+
+        </div>
+    </header>
+
+    <div class='container'>
+        <div class='row'>
+            <div class='col-sm-12 '>
+
+                <h1>谁在用人工智能武装微信？</h1>
+
+                <div id='myCarousel' class='carousel slide yaonie-customer'>
+                    <ol class='carousel-indicators'>
+                        <li data-target='#myCarousel' data-slide-to='0' class='active'></li>
+                        <li data-target='#myCarousel' data-slide-to='1' class=''></li>
+                        <li data-target='#myCarousel' data-slide-to='2' class=''></li>
+                    </ol>
+                    <div class='carousel-inner' style='margin: auto 0;'>
+                        <div class='item active'>
+                            <img data-small='true' src='images/enditor/weixin-pattern-recognition-team1.jpg' />
+
+                        </div>
+                        <div class='item'>
+                            <img data-small='true' src='images/enditor/weixin-chenbo1-by-ifanr.jpg' />
+
+                        </div>
+                        <div class='item'>
+                            <img data-small='true' src='images/enditor/weixin-luli-by-ifanr.jpg' />
+
+                        </div>
+                    </div>
+                    <a class='left carousel-control' href='#myCarousel' data-slide='prev'>‹</a>
+                    <a class='right carousel-control' href='#myCarousel' data-slide='next'>›</a>
+                </div>
+
+                <p>
+                    &nbsp;&nbsp;&nbsp;微信 5.0“扫一扫”发布的时候，被讨论得最多的是它所承载的商业化重任。
+
+被忽视的，是背后的技术，及技术蕴藏的趋势。<br />
+
+                    同样地，这个版本亮相的微信自主研发语音识别技术，也为外界所震惊和质疑。“腾讯能够一夜之间自研成功语音识别技术？”类似质疑遍地都是。<br />
+
+                    在独家采访微信“模式识别中心”团队后，我们发现两个产品功能并不是孤立地存在的，而是人工智能技术武装微信的两个投射。微信走向智能化，不是从这两个功能起步，也显然不以其为终点。<br />
+
+                    本文揭秘了微信产品背后的故事，介绍“模式识别技术”的未来形态，以及科研与产品开发的关系。而我们更关心的，是微信乃至整个移动互联网正在发生的变化：越来越智能化。这是由移动设备和移动产品丰富的连接性引发的变革。正是得益于如此丰富的连接性，人工智能基础技术得以从多方面渗透进来，燃起穿戴设备的热潮，掀起电视、汽车、家居、医疗各产业的变革，真正拉开科技改变生活的序幕。<br />
+
+                    1/3 博士，2/3 硕士的高学历团队<br />
+
+                    “模式识别”是人工智能的一个分支，在上个世纪 60 年代成为一门学科。所谓模式识别（pattern recognition）是指对表征事物或现象的各种形式信息进行处理和分析，以实现对事物或现象进行描述、辨认、分类和解释的过程。模式识别对象包括文字、语音、图像、生物传感器、心电图、脑电图、地震波等等。对应到 IT 领域，主要是指文字、语音、图像、与 IT 相关的传感器等，如 iPhone 5s 新增的指纹识别功能，将来也会属于“模式识别”研究的对象。<br />
+
+                    微信的模式识别中心也是一个研发中心。据团队负责人陈波介绍，他们隶属于微信北京研发中心，研究方向包含语音识别、图像识别、语音合成、音频指纹、语义理解、数据挖掘等等。不过由于这个研究型团队辖属于微信，他们不只负责理论研究，还对接产品功能开发。<br />
+
+                    模式识别中心原先不属于微信，其前身是腾讯研究院下属模式识别小组，2010 年 9 月成立。这个小组面向整个腾讯公司提供基础研究成果的服务。比如诞生之初就为 QQ 输入法提供手写识别功能。2011 年腾讯内部创新热潮起来后，这个团队拓展研究领域，扩展到人脸识别、图像检索、文字识别等，集多种图像技术于一身“QQ 慧眼”就是这个团队研发的。2012 年 9 月，该团队正式划归微信管辖，随他们一同到微信的是当月发布的微信 4.3 版本中的通讯录语音搜索功能。
+            <br />
+                    为什么基础研究团队要整合到微信团队？陈波给出的答案是：“一方面微信是引领移动互联网潮流的产品，对视觉、听觉延伸的东西需求很大；一方面技术成熟，到了基础领域研究落地阶段，微信是一个比较合适的平台”。
+            <br />
+                    目前微信模式识别团队有 40 多名成员，都是高学历多能人才。据陈波介绍，40 多名同事中，有 1/3 是博士，2/3 是硕士。还有一个类似比例是：整个团队 1/3 从事前沿技术研究，2/3 从事现有技术研究和产品对接。
+            <br />
+                    关于团队的研究方向，陈波介绍主要分为语音和图像两个小组，语音研究对应的是手机上的麦克风，由博士生卢鲤带领 12 个人负责；图像对应的是手机摄像头，由博士生刘海龙带领 13 个人负责。“小组是比较成熟的方向。除了小组之外，我们也有其他研究方向”，陈波说，“包括文字识别、人脸识别、语义理解、视觉搜索、音频指纹检索等”。除了科学研究团队，模式识别中心还有一个工程团队与微信产品团队进行对接。<br />
+
+                    据陈波介绍，她的团队不是纯粹搞研究，不只会写 paper，还有很好的开发能力。他们没有专门的手机开发人员，都是自己搞 iPhone 开发，把 demo 秀出来；遇到产品问题，也要与产品团队共同解决。在招聘人才方面，模式识别中心也是把关严格，要求研究与工程能力兼备，所以团队过即使加入微信后也没有膨胀发展：团队成立之初是 2、3 个人，去年加入微信大家庭的时候是 30 人左右；加入微信后，现在团队是 40 人出头。相对于竞争对手，这仍然是一个精干的团队。<br />
+
+                    “两盒烟，三个月”，一诺千金<br />
+
+                    微信 5.0 加入自主研发语音识别技术，引起震动。很多人不相信腾讯能在一夜之间靠自己研发出这种高门槛、长周期、重积累的技术。行业龙头老大科大讯飞创业 10 多年还在不断完善这种技术——当然，讯飞在语义识别、云平台服务、串联产业链方面扎得更深。<br />
+
+                    但是，世界上没有奇迹，也没有“一夜之间”的传奇故事。<br />
+
+                    腾讯模式识别团队成立于 2010 年 9 月，前期图像技术成熟，较早落地。但它的语音识别技术起步晚，2011 年底才正式启动语音识别自研项目。显然，这个项目的启动受到了当年苹果发布 Siri 语音助手的影响，后者引发语音产业热潮——科大讯飞的股票迄今已经翻番。<br />
+
+                    到今年 8 月，语音识别自研项目历时一年半，模式识别中心终于攻克语音识别技术难题，并在微信 5.0 产品中正式亮相（“语音输入”功能）。由于模式识别团队属于研究型队伍，在前期主要集中于积累基础技术，加上腾讯的低调作风，才给外界造成“一夜之间冒出来”的感觉。<br />
+
+                    事实上，在此之前模式识别团队曾为微信开发多项人工智能技术。比如 2012 年 9 月发布的 4.3 版本中的通讯录语音搜索功能，2013 年 2 月发布的 4.5 版本中的语音提醒和“摇一摇”搜歌。但微信 4.5 版本中的“语音提醒”功能才引起外界对其语音技术的关注，一方面与微信受到的关注度相关——微信 1 月刚刚中旬宣布达到 3 亿用户，成为一个庞大的移动 IM 平台；另一方面“语音提醒”功能非常显眼，不像“摇一摇”搜歌或“扫一扫”那么隐蔽或难于理解。<br />
+
+                    关于微信 4.5 版本的“语音提醒”功能，外界所不知道的是，它差点无法在该版本中发布。最终顺利发布，这后面有一个“两盒烟，三个月”的故事。<br />
+
+                    去年 10 月 8 日，国庆长假刚刚结束，模式识别中心语音组组长卢鲤与团队负责人陈波到广州与张小龙交流工作。“张小龙希望语音提醒在 4.5 版本上，我说技术不成熟，做这个事情没把握。我说了半个小时，小龙一言不发，最后说‘那你们觉得需要多长？’我咬咬牙说起码得 6 个月。小龙又一言不发，走开了”，卢鲤回忆到，“他回来后，手里拿了 4 包烟，开会的人有 4 个人抽烟，一人一包，包括他自己。这烟我没抽过，我看了烟，又咬咬牙，说‘要不 3 个月’，他听了之后，把他手里那包烟也留给了我。”
+
+                        
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- Modal -->
+    <div class='modal fade' id='myModal-ys-img-big' tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden='true'>
+        <div class='modal-dialog' style='width: 100%; height: 100%;'>
+            <div id='sys-img-big' class='carousel slide' style='margin: 0 auto; height: 100%;'>
+                <ol class='carousel-indicators'>
+                </ol>
+                <div class='carousel-inner'>
+                </div>
+                <a class='left carousel-control' href='#sys-img-big' style='font-size: 70px; line-height: 600px;' data-slide='prev'>‹ </a>
+                <a class='right carousel-control' href='#sys-img-big' style='font-size: 70px; line-height: 600px;' data-slide='next'>›</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</body>
+</html>

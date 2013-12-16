@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+    <title>发表文章</title>
+    <link href='bootstrap/css/bootstrap.css' rel='stylesheet' />
+    <link href='style/doc.css' rel='stylesheet' />
+    <link href='richText/external/google-code-prettify/prettify.css' rel='stylesheet'>
+
+    <link href='http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-responsive.min.css' rel='stylesheet'>
+    <link href='http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css' rel='stylesheet'>
+    <link href='richText/richtext.css' rel='stylesheet' />
+
+
+
+</head>
+<body>
+    <header class='navbar navbar-inverse navbar-fixed-top bs-docs-nav' role='banner'>
+        <div class='container'>
+            <div class='navbar-header'>
+                <button class='navbar-toggle' type='button' data-toggle='collapse' data-target='.bs-navbar-collapse'>
+                    <span class='sr-only'>blog</span>
+                    <span class='icon-bar'></span>
+                    <span class='icon-bar'></span>
+                    <span class='icon-bar'></span>
+                </button>
+                <a href='/' class='navbar-brand'>blog</a>
+            </div>
+            <div class='input-group nav navbar-nav ' style='width: 200px; padding-top: 10px;'>
+                <input type='text' class='form-control' placeholder='搜索'>
+                <span class='  input-group-addon'><span class='glyphicon glyphicon-search'></span></span>
+
+            </div>
+            <nav class='collapse navbar-collapse bs-navbar-collapse' role='navigation'>
+                <ul class='nav navbar-nav'>
+
+                    <li id='navHelp' class=''><a href='#'>联系</a></li>
+                </ul>
+                <ul class='nav navbar-nav navbar-right'>
+                    <li class='dropdown'>
+
+                        <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+
+
+                            <span class='glyphicon glyphicon-user'></span>
+
+                            一千年以后 <span class='caret'></span>
+                        </a>
+                        <ul class='dropdown-menu' role='menu'>
+                            <li><a href='#'>
+                                <span class='glyphicon glyphicon-pencil'></span>
+                                发表文章</a></li>
+                            <li><a href='#'>退出</a></li>
+
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a id='btnLogin' href='javascript:void(0)'>登录</a>
+                    </li>
+                </ul>
+
+
+
+            </nav>
+
+        </div>
+    </header>
+
+    <div class='container'>
+        <div class='row'>
+            <div class="col-md-10" role="main">
+                <div>
+                    <input type="password" class=" col-xs-3 form-control input-lg" id="inputTitle" placeholder="标题">
+                </div>
+                <div class='btn-toolbar' data-role='editor-toolbar' data-target='#editor'>
+                    <div class='btn-group'>
+                        <ul class='dropdown-menu'>
+                            <li><a data-edit='fontName Serif'>Serif</a></li>
+                            <li><a data-edit='fontName Sans'>Sans</a></li>
+                            <li><a data-edit='fontName Arial'>Arial</a></li>
+                            <li><a data-edit='fontName Arial Black'>Arial Black</a></li>
+                            <li><a data-edit='fontName Courier'>Courier</a></li>
+                            <li><a data-edit='fontName Courier New'>Courier New</a></li>
+                            <li><a data-edit='fontName Comic Sans MS'>Comic Sans MS</a></li>
+                            <li><a data-edit='fontName Helvetica'>Helvetica</a></li>
+                            <li><a data-edit='fontName Impact'>Impact</a></li>
+                            <li><a data-edit='fontName Lucida Grande'>Lucida Grande</a></li>
+                            <li><a data-edit='fontName Lucida Sans'>Lucida Sans</a></li>
+                            <li><a data-edit='fontName Tahoma'>Tahoma</a></li>
+                            <li><a data-edit='fontName Times'>Times</a></li>
+                            <li><a data-edit='fontName Times New Roman'>Times New Roman</a></li>
+                            <li><a data-edit='fontName Verdana'>Verdana</a></li>
+                        </ul>
+                    </div>
+                    <div class='btn-group'>
+                        <a class='btn dropdown-toggle' data-toggle='dropdown' title='' data-original-title='字体大小'><i class='icon-text-height'></i>&nbsp;<b class='caret'></b></a>
+                        <ul class='dropdown-menu'>
+                            <li><a data-edit='fontSize 5'><font size='5'>大号</font></a></li>
+                            <li><a data-edit='fontSize 3'><font size='3'>正常</font></a></li>
+                            <li><a data-edit='fontSize 1'><font size='1'>小号</font></a></li>
+                        </ul>
+                    </div>
+                    <div class='btn-group'>
+                        <a class='btn ' data-edit='bold' title='' data-original-title='粗体 (Ctrl/Cmd+B)'><i class='icon-bold'></i></a>
+                        <a class='btn' data-edit='italic' title='' data-original-title='斜体 (Ctrl/Cmd+I)'><i class='icon-italic'></i></a>
+                        <a class='btn' data-edit='strikethrough' title='' data-original-title='删除线'><i class='icon-strikethrough'></i></a>
+                        <a class='btn' data-edit='underline' title='' data-original-title='下划线 (Ctrl/Cmd+U)'><i class='icon-underline'></i></a>
+                    </div>
+                    <div class='btn-group'>
+                        <a class='btn btn-info' data-edit='justifyleft' title='' data-original-title='左对齐 (Ctrl/Cmd+L)'><i class='icon-align-left'></i></a>
+                        <a class='btn' data-edit='justifycenter' title='' data-original-title='居中 (Ctrl/Cmd+E)'><i class='icon-align-center'></i></a>
+                        <a class='btn' data-edit='justifyright' title='' data-original-title='右对齐 (Ctrl/Cmd+R)'><i class='icon-align-right'></i></a>
+                        <a class='btn' data-edit='justifyfull' title='' data-original-title='两端对齐 (Ctrl/Cmd+J)'><i class='icon-align-justify'></i></a>
+                    </div>
+
+
+                    <div class='btn-group'>
+                        <a class='btn' title='' id='pictureBtn' data-original-title='插入图片 '><i class='icon-picture'></i></a>
+
+                        <input type='file' data-role='magic-overlay' data-target='#pictureBtn' data-edit='insertImage' style='opacity: 0; position: absolute; top: 0px; left: 0px; width: 41px; height: 30px;'>
+                    </div>
+                    <div class='btn-group'>
+                        <a class='btn' data-edit='undo' title='' data-original-title='撤销 (Ctrl/Cmd+Z)'><i class='icon-undo'></i></a>
+
+                        <input type='text' data-edit='inserttext' id='voiceBtn' x-webkit-speech='' style='position: absolute; top: 310px; left: 876.5px;'>
+                    </div>
+
+                </div>
+
+                <div id='editor' contenteditable='true'></div>
+            </div>
+        </div>
+    </div>
+
+    <!--[if lt IE 9]>
+     <script src="../docs-assets/js/html5shiv.js"></script>
+     <script src="../docs-assets/js/respond.min.js"></script>
+     <script src='script/jQuery1.9.js'></script>
+   <![endif]-->
+
+    <!--[if gte IE 9]><!-->
+    <script src="script/jQuery2.03.js"></script>
+    <!--<![endif]-->
+
+
+    <script src='bootstrap/js/bootstrap.js'></script>
+
+
+    <script src='richText/external/jquery.hotkeys.js'></script>
+
+    <!--    <script src='http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js'></script>-->
+
+
+    <script src='richText/external/google-code-prettify/prettify.js'></script>
+
+
+    <script src='richText/bootstrap-wysiwyg.js'></script>
+    <script src='script/postContent.js'></script>
+
+</body>
+</html>

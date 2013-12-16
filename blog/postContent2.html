@@ -1,0 +1,239 @@
+﻿<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+    <title>发表文章</title>
+    <link href='bootstrap/css/bootstrap.css' rel='stylesheet' />
+    <link href='style/doc.css' rel='stylesheet' />
+
+
+</head>
+<body>
+    <header class='navbar navbar-inverse navbar-fixed-top bs-docs-nav' role='banner'>
+        <div class='container'>
+            <div class='navbar-header'>
+                <button class='navbar-toggle' type='button' data-toggle='collapse' data-target='.bs-navbar-collapse'>
+                    <span class='sr-only'>blog</span>
+                    <span class='icon-bar'></span>
+                    <span class='icon-bar'></span>
+                    <span class='icon-bar'></span>
+                </button>
+                <a href='/' class='navbar-brand'>blog</a>
+                <div id='div-search' class='input-group ' style='width: 200px; padding-top: 10px;'>
+                    <input id='input-search' type='text' class='form-control' placeholder='搜索' />
+                    <span class='  input-group-addon'><span class='glyphicon glyphicon-search'></span></span>
+                </div>
+            </div>
+
+
+            <nav class='collapse navbar-collapse bs-navbar-collapse' role='navigation'>
+                <ul class='nav navbar-nav'>
+
+                    <li id='navHelp' class=''><a href='#'>联系</a></li>
+                </ul>
+                <ul class='nav navbar-nav navbar-right'>
+                    <li class='dropdown'>
+                        <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+                            <span class='glyphicon glyphicon-user'></span>
+
+                            一千年以后 <span class='caret'></span>
+                        </a>
+                        <ul class='dropdown-menu' role='menu'>
+                            <li><a href='#'>
+                                <span class='glyphicon glyphicon-pencil'></span>
+                                发表文章</a></li>
+                            <li><a href='#'>退出</a></li>
+
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a id='btnLogin' href='javascript:void(0)'>登录</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class='container' style='margin-top: 10px;'>
+        <div class='row'>
+
+            <form class='form-horizontal   col-sm-12' style='' role='form'>
+                <div id='div-inputTitle' class='form-group col-sm-12'>
+                    <input type='text' class='form-control input-lg' id='inputTitle' placeholder='请输入标题' />
+                </div>
+
+                <div id='divInsert' class='form-group col-sm-12' style='margin-bottom: 0px;'>
+                    <div class='btn-group'>
+                        <button type='button' id='pictureBtn' class='btn btn-default  '>
+                            <span class='glyphicon glyphicon-picture'></span>图片
+                        </button>
+                        <input id='pictureFile' accept='image/*' type='file' multiple='multiple' data-target='#pictureBtn' style='display: none' />
+                    </div>
+                    <div class='btn-group'>
+                        <button type='button' id='btnShowFace' data-toggle='modal' data-target='#myModalFace' class='btn btn-default  '>
+                            <img src='images/biaoqing.png' />表情
+                        </button>
+                    </div>
+                    <div id='sortable2' style='overflow: hidden;' class='btn-group connectedSortable'>
+                        <button type='button' id='Button1' data-toggle='modal' class='btn btn-default  '>
+                            垃圾箱
+                            <span class='glyphicon glyphicon-trash'></span>
+
+                        </button>
+                    </div>
+                    <div id='divUpdate' style=''>
+                        <div style='padding-left: 15px;'>
+                            <img src='images/tishi.png' />
+                        </div>
+
+                        <div class='bs-example upload-image-div'>
+
+                            <ul id='sortable1' class='sortable connectedSortable'>
+
+                                <li id='add-image' style='height: 80px; margin-top: 9px; margin-left: 5px; width: 90px; border: 2px dashed #ddd; -webkit-border-radius: 2px; background: #fff url(images/aiJlV3s0C9s.png ) no-repeat center; cursor: pointer;'></li>
+                            </ul>
+                            <div style='clear: both;'></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class='form-group col-sm-12'>
+
+                    <div id='editor' class='form-control ' contenteditable='true'>
+                    </div>
+                    <input type='hidden' id='inputEditor' />
+                </div>
+                <div class='form-group' style='text-align: center;'>
+                    <div class=' col-md-offset-4 col-sm-2 text-center'>
+                        <button id='inputPost' type='button' class='btn btn-primary btn-lg btn-block'>发&nbsp;表</button>
+
+                    </div>
+
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class='modal fade' id='myModalFace' tabindex='-1'>
+        <div class='modal-dialog'>
+            <div class='modal-content'>
+
+                <div class='modal-body' id='faceImg'>
+                    <table class='table table-bordered'>
+                        <tbody>
+
+                            <tr>
+                                <td>
+                                    <img data-face='/images/face/ai_f51.png' src='images/face/i_f51.png' /></td>
+                                <td>
+                                    <img data-face='/images/face/ai_f52.png' src='images/face/i_f52.png' /></td>
+                                <td>
+                                    <img data-face='/images/face/ai_f53.png' src='images/face/i_f53.png' /></td>
+                                <td>
+                                    <img data-face='/images/face/ai_f54.png' src='images/face/i_f54.png' /></td>
+                                <td>
+                                    <img data-face='/images/face/ai_f55.png' src='images/face/i_f55.png' /></td>
+                                <td>
+                                    <img data-face='/images/face/ai_f56.png' src='images/face/i_f56.png' /></td>
+                                <td>
+                                    <img data-face='/images/face/ai_f57.png' src='images/face/i_f57.png' /></td>
+                                <td>
+                                    <img data-face='/images/face/ai_f58.png' src='images/face/i_f58.png' /></td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img data-face='/images/face/ai_f59.png' src='images/face/i_f59.png' /></td>
+                                <td>
+                                    <img data-face='/images/face/ai_f60.png' src='images/face/i_f60.png' /></td>
+                                <td>
+                                    <img data-face='/images/face/ai_f61.png' src='images/face/i_f61.png' /></td>
+                                <td>
+                                    <img data-face='/images/face/ai_f62.png' src='images/face/i_f62.png' /></td>
+                                <td>
+                                    <img data-face='/images/face/ai_f63.png' src='images/face/i_f63.png' /></td>
+                                <td>
+                                    <img data-face='/images/face/ai_f64.png' src='images/face/i_f64.png' /></td>
+                                <td>
+                                    <img data-face='/images/face/ai_f65.png' src='images/face/i_f65.png' /></td>
+                                <td>
+                                    <img data-face='/images/face/ai_f66.png' src='images/face/i_f66.png' /></td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img data-face='/images/face/ai_f67.png' src='images/face/i_f67.png' /></td>
+                                <td>
+                                    <img data-face='/images/face/ai_f68.png' src='images/face/i_f68.png' /></td>
+                                <td>
+                                    <img data-face='/images/face/ai_f69.png' src='images/face/i_f69.png' /></td>
+                                <td>
+                                    <img data-face='/images/face/ai_f70.png' src='images/face/i_f70.png' /></td>
+                                <td>
+                                    <img data-face='/images/face/ai_f71.png' src='images/face/i_f71.png' /></td>
+                                <td>
+                                    <img data-face='/images/face/ai_f72.png' src='images/face/i_f72.png' /></td>
+                                <td>
+                                    <img data-face='/images/face/ai_f73.png' src='images/face/i_f73.png' /></td>
+                                <td>
+                                    <img data-face='/images/face/ai_f74.png' src='images/face/i_f74.png' /></td>
+
+                            </tr>
+                            <tr>
+
+                                <td>
+                                    <img data-face='/images/face/ai_f75.png' src='images/face/i_f75.png' /></td>
+                                <td>
+                                    <img data-face='/images/face/ai_f76.png' src='images/face/i_f76.png' /></td>
+                                <td>
+                                    <img data-face='/images/face/ai_f77.png' src='images/face/i_f77.png' /></td>
+                                <td>
+                                    <img data-face='/images/face/ai_f78.png' src='images/face/i_f78.png' /></td>
+                                <td>
+                                    <img data-face='/images/face/ai_f79.png' src='images/face/i_f79.png' /></td>
+                                <td>
+                                    <img data-face='/images/face/ai_f80.png' src='images/face/i_f80.png' /></td>
+                                <td>
+                                    <img data-face='/images/face/ai_f81.png' src='images/face/i_f81.png' /></td>
+                                <td>
+                                    <img data-face='/images/face/ai_f82.png' src='images/face/i_f82.png' /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+    <!--[if lt IE 9]>
+     <script src='../docs-assets/js/html5shiv.js'></script>
+     <script src='../docs-assets/js/respond.min.js'></script>
+     <script src='script/jQuery1.9.js'></script>
+   <![endif]-->
+
+    <!--[if gte IE 9]><!-->
+    <script src='script/jQuery2.03.js'></script>
+    <!--<![endif]-->
+
+    <script src='script/jquery.ui.core.js'></script>
+    <script src='script/jquery.ui.widget.js'></script>
+    <script src='script/jquery.ui.mouse.js'></script>
+    <script src='bootstrap/js/bootstrap.js'></script>
+
+    <script src='script/jquery.ui.sortable.js'></script>
+
+    <script src='script/postContent2.js'></script>
+
+    <script src='script/jquery.upload.js'></script>
+
+
+
+</body>
+</html>
